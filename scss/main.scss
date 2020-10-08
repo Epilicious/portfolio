@@ -70,3 +70,39 @@ main {
     }
   }
 }
+// Work Page
+#work {
+  h1 {
+    text-align: center;
+  }
+}
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+  img {
+    width: 100%;
+    border: solid black;
+    &:hover {
+      opacity: 90%;
+      @include easeOut();
+    }
+  }
+
+  .btn-light {
+    display: block;
+    border: 0;
+    padding: 1rem;
+    background: darken($primary-color, 50);
+    color: #fff;
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color ($secondary-color);
+    }
+  }
+  .item {
+    margin: 5px;
+  }
+}
